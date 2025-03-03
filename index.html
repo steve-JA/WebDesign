@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service de Transaction de Devises</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">DevisesOnline</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button">Services</a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <a class="dropdown-item" href="#achat">Achat</a>
+                    <a class="dropdown-item" href="#vente">Vente</a>
+                    <a class="dropdown-item" href="#transfert">Transfert</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">À Propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Connexion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Inscription</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero bg-primary text-white text-center">
+    <div class="container">
+        <h1>Bienvenue sur DevisesOnline</h1>
+        <p>Échangez vos devises en toute sécurité et à tout moment.</p>
+        <a href="signup.html" class="btn btn-light btn-lg">Commencer</a>
+    </div>
+</header>
+
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Nos Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-exchange-alt fa-3x mb-3"></i>
+                        <h3 class="card-title">Échange de Devises</h3>
+                        <p class="card-text">Échangez vos devises avec des taux compétitifs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-3x mb-3"></i>
+                        <h3 class="card-title">Suivi des Taux</h3>
+                        <p class="card-text">Suivez les taux de change en temps réel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-headset fa-3x mb-3"></i>
+                        <h3 class="card-title">Assistance 24/7</h3>
+                        <p class="card-text">Notre équipe est là pour vous aider à tout moment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Questions Fréquemment Posées (FAQ)</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1. Qu'est-ce qu'un taux de change ?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Le taux de change est le prix d'une devise par rapport à une autre. Il détermine combien d'une devise vous pouvez obtenir en échange d'une autre. 
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. Comment puis-je échanger des devises ?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Vous pouvez échanger des devises en utilisant notre plateforme en ligne, où vous pouvez sélectionner la devise que vous souhaitez échanger et la devise que vous souhaitez recevoir.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. Quels sont les frais associés à l'échange de devises ?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Les frais peuvent varier en fonction des devises échangées et du montant. Nous vous recommandons de consulter notre section des tarifs pour plus de détails.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4. Est-ce que l'échange de devises est sécurisé ?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Oui, notre plateforme utilise des protocoles de sécurité avancés pour garantir que toutes les transactions sont sécurisées et protégées.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5. Quels types de devises puis-je échanger ?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Nous proposons un large éventail de devises, y compris les principales devises comme l'USD, l'EUR, et d'autres devises locales. Consultez notre liste complète pour plus d'informations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">À Propos de Nous</h2>
+        <p class="text-center">Nous sommes une plateforme de confiance pour l'échange de devises, offrant des services sécurisés et rapides.</p>
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    <p>&copy; 2023 DevisesOnline. Tous droits réservés.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    const servicesDropdown = document.getElementById('servicesDropdown');
+    const dropdownMenu = document .querySelector('.dropdown-menu');
+
+    servicesDropdown.addEventListener('mouseover', () => {
+        dropdownMenu.classList.add('show');
+    });
+
+    servicesDropdown.addEventListener('mouseout', () => {
+        dropdownMenu.classList.remove('show');
+    });
+
+    dropdownMenu.addEventListener('mouseover', () => {
+        dropdownMenu.classList.add('show');
+    });
+
+    dropdownMenu.addEventListener('mouseout', () => {
+        dropdownMenu.classList.remove('show');
+    });
+</script>
+</body>
+</html>
