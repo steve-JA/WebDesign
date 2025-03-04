@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dropdown-menu {
+    display: none; /* Masquer le menu par défaut */
+}
+.dropdown-menu.show {
+    display: block; /* Afficher le menu lorsqu'il a la classe 'show' */
+}
+
+.hero {
+    padding: 100px 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
