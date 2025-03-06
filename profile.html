@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur - DevisesOnline</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css"> <!-- Lien vers votre fichier CSS personnalisé -->
+</head>
+<body>
+
+<!-- Menu de Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">DevisesOnline</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Mon Profil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.html">Déconnexion</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Section de Profil Utilisateur -->
+<div class="container mt-5">
+    <h2 class="text-center">Mon Profil</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <img src="https://via.placeholder.com/150" alt="Photo de Profil" class="rounded-circle" width="150" height="150">
+                    <h3 class="mt-3">Nom de l'Utilisateur</h3>
+                    <p class="text-muted">Email: utilisateur@example.com</p>
+                    <p class="text-muted">Date d'inscription: 01 Janvier 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4>Informations Personnelles</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="username" value="NomUtilisateur" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" value="utilisateur@example.com" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" class="form-control" id="phone" value="+33 6 12 34 56 78">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Adresse</label>
+                            <input type="text" class="form-control" id="address" value="123 Rue Exemple, Paris" readonly>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Modifier le Profil</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal pour Modifier le Profil -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProfileModalLabel">Modifier le Profil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="editUsername">Nom d'utilisateur</label>
+                        <input type="text" class="form-control" id="editUsername" value="NomUtilisateur">
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input type="email" class="form-control" id="editEmail" value="utilisateur@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">Téléphone</label>
+                        <input type="tel" class="form-control" id="editPhone" value="+33 6 12 34 56 78">
+                    </div>
+                    <div class="form-group">
+                        <label for="editAddress">Adresse</label>
+                        <input type="text" class="form-control" id="editAddress" value="123 Rue Exemple, Paris">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary">Sauvegarder les modifications</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4">
+    <p>&copy; 2023 DevisesOnline. Tous droits réservés.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

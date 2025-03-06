@@ -16,10 +16,10 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav mx-auto text-center"> <!-- Utilisation de mx-auto pour centrer -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button">Services</a>
-                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <div class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
                     <a class="dropdown-item" href="#achat">Achat</a>
                     <a class="dropdown-item" href="#vente">Vente</a>
                     <a class="dropdown-item" href="#transfert">Transfert</a>
@@ -35,23 +35,114 @@
                 <a class="nav-link" href="signup.html">Inscription</a>
             </li>
         </ul>
+        <div class="ml-auto">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-globe"></i> Langues
+                </button>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item" href="#">
+                        <i class="flag-icon flag-icon-fr"></i> Français
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="flag-icon flag-icon-us"></i> Anglais
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="flag-icon flag-icon-es"></i> Espagnol
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="flag-icon flag-icon-de"></i> Allemand
+                    </a>
+                </div>
+            </div>
+           <!-- <button class="btn btn-outline-primary ml-3" id="changeLanguage">Changer la langue</button>--> <!-- Bouton pour changer la langue -->
+
+        </div> <!-- Utilisation d'un div pour le bouton à droite -->
+       
     </div>
 </nav>
 
-<header class="hero bg-primary text-white text-center">
+<header class="hero bg-primary text-center">
     <div class="container">
         <h1>Bienvenue sur DevisesOnline</h1>
         <p>Échangez vos devises en toute sécurité et à tout moment.</p>
         <a href="signup.html" class="btn btn-light btn-lg">Commencer</a>
+        <a href="login.html" class="btn btn-light btn-lg">se connecter</a>
+    </div>
+
+    <div class="container mt-4">
+        <div id="currencyCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-4 col-md-3 mb-4">
+                            <div class="bg-white text-black p-4 rounded-lg">
+                                <img alt="DAI/USDT" class="h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/uxXoJEZoOwkQwZBRy4Cs7fwZ3X0-2EWWL_Bb3Yw_w2c.jpg" width="50"/>
+                                <p class="mt-2 text-center">DAI / USDT</p>
+                                <p class="text-center">$0.9783</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-md-3 mb-4">
+                            <div class="bg-white text-black p-4 rounded-lg">
+                                <img alt="POL/USDT" class="h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/BLHRe0MeFkKRs8TMDq5zLs6AcORhqiFzEPRCbrqjP0c.jpg" width="50"/>
+                                <p class="mt-2 text-center">POL / USDT</p>
+                                <p class="text-center">$0.2452</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-md-3 mb-4">
+                            <div class="bg-white text-black p-4 rounded-lg">
+                                <img alt="POL/USDT" class="h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/BLHRe0MeFkKRs8TMDq5zLs6AcORhqiFzEPRCbrqjP0c.jpg" width="50"/>
+                                <p class="mt-2 text-center">POL / USDT</p>
+                                <p class="text-center">$0.2452</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-4 col-md-3 mb-4">
+                            <div class="bg-white text-black p-4 rounded-lg">
+                                <img alt="USDC/USDT" class="h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/bCQHG0Dvjf5t9cfm4kpMfjy-YsqJWcEDOWHQQXVzuPk.jpg" width="50"/>
+                                <p class="mt-2 text-center">USDC / USDT</p>
+                                <p class="text-center">$0.9930</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="bg-white text-black p-4 rounded-lg">
+                                <img alt="Another Currency" class="h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/DknKz_n86LvhDJWFl_rVK2Obj143x99yRVoDeBExRwA.jpg" width="50"/>
+                                <p class="mt-2 text-center">Another Currency</p>
+                                <p class="text-center">$0.9930</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-md-3 mb-4">
+                            <div class="bg-white text-black p-4 rounded-lg">
+                                <img alt="USDC/USDT" class="h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/bCQHG0Dvjf5t9cfm4kpMfjy-YsqJWcEDOWHQQXVzuPk.jpg" width="50"/>
+                                <p class="mt-2 text-center">USDC / USDT</p>
+                                <p class="text-center">$0.9930</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#currencyCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#currencyCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
     </div>
 </header>
+
 
 <section id="services" class="py-5">
     <div class="container">
         <h2 class="text-center">Nos Services</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card mb-4 text-center">
+                <div class="card mb-4 text-center card-exchange">
                     <div class="card-body">
                         <i class="fas fa-exchange-alt fa-3x mb-3"></i>
                         <h3 class="card-title">Échange de Devises</h3>
@@ -60,16 +151,16 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4 text-center">
+                <div class="card mb-4 text-center card-tracking">
                     <div class="card-body">
-                        <i class="fas fa-chart-line fa-3x mb-3"></i>
+                        <i class="fas fa-chart-line fa-3x mb-3 "></i>
                         <h3 class="card-title">Suivi des Taux</h3>
-                        <p class="card-text">Suivez les taux de change en temps réel.</p>
+                        <p class="card-text">Suivez les taux de change sur notre site en temps réel.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4 text-center">
+            <div class="col-md-4 ">
+                <div class="card mb-4 text-center card-assistance">
                     <div class="card-body">
                         <i class="fas fa-headset fa-3x mb-3"></i>
                         <h3 class="card-title">Assistance 24/7</h3>
@@ -192,6 +283,9 @@
 
     dropdownMenu.addEventListener('mouseout', () => {
         dropdownMenu.classList.remove('show');
+    });
+    document.getElementById('changeLanguage').addEventListener('click', function() {
+        alert('Fonction de changement de langue à implémenter !');
     });
 </script>
 </body>

@@ -1,91 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar-nav {
-  flex-direction: row; /* Aligne les éléments horizontalement */
-  justify-content: center; /* Centre les éléments */
-  width: 100%; /* Prend toute la largeur */
-}
-.nav-item {
-  margin: 0 15px; /* Ajoute de l'espace entre les éléments du menu */
-}
-/* Marges pour un effet format A4 */
-.navbar {
-  padding-left: 15%; /* Ajustez cette valeur selon vos besoins */
-  padding-right: 15%; /* Ajustez cette valeur selon vos besoins */
-}
-
-.carousel-item {
-    padding: 20px; /* Ajoute un peu d'espace autour des éléments du carrousel */
-}
-
-.btn-card{
-   
-  box-shadow: 1px 1px 1.5px #1f1d1d,  -1px -1px 1.5px #1f1d1d;
-}
-
-.card-exchange {
-    background-color: #f8d7da; /* Couleur pour Échange de Devises */
-    border-color: #f5c6cb;
-}
-.card-tracking {
-    background-color: #d4edda; /* Couleur pour Suivi des Taux */
-    border-color: #c3e6cb;
-}
-.card-assistance {
-    background-color: #d1ecf1; /* Couleur pour Assistance 24/7 */
-    border-color: #bee5eb;
-}
-
-/* .blob {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #ff0000;
-    opacity: 1;
-    filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
-}
-
-  @keyframes blob-bounce {
-    0% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  
-    25% {
-      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-  
-    50% {
-      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-  
-    75% {
-      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-  
-    100% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  } */
-
-.dropdown-menu {
-    display: none; /* Masquer le menu par défaut */
-}
-.dropdown-menu.show {
-    display: block; /* Afficher le menu lorsqu'il a la classe 'show' */
-}
-
-.hero {
-    padding: 100px 0;
-}
-
-/* .notification {
+/* From Uiverse.io by SouravBandyopadhyay */ 
+.notification {
     display: flex;
     flex-direction: column;
     isolation: isolate;
@@ -185,8 +99,4 @@ body {
     text-align: center;
     font-size: 0.9rem;
     width: 75%;
-  } */
-
-footer {
-    background-color: #f8f9fa;
-}
+  }
